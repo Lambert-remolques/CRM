@@ -4,8 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Instructivo CRM Nubux — Guía para Vendedores</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
 <style>
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-Variable.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-Italic-Variable.woff2') format('woff2');
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+  }
+
   :root {
     --green-50: #f0fdf4;
     --green-100: #dcfce7;
@@ -27,18 +42,21 @@
     --gray-700: #374151;
     --gray-800: #1f2937;
     --gray-900: #111827;
-    --font-display: 'Fraunces', serif;
-    --font-body: 'DM Sans', sans-serif;
+    --font-display: 'Montserrat', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
     font-family: var(--font-body);
+    font-weight: 500;
     color: var(--gray-800);
     background: var(--gray-50);
-    line-height: 1.7;
+    line-height: 1.65;
+    letter-spacing: -0.012em;
     font-size: 16px;
+    font-synthesis: none;
   }
 
   /* ── NAV LATERAL ── */
@@ -62,17 +80,22 @@
 
   .sidebar-logo {
     font-family: var(--font-display);
+    font-style: italic;
     font-size: 1.4rem;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    line-height: 0.95;
     color: var(--green-300);
     margin-bottom: 0.25rem;
   }
 
   .sidebar-sub {
     font-size: 0.75rem;
+    font-weight: 700;
     color: var(--green-400);
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     margin-bottom: 2.5rem;
     opacity: 0.8;
   }
@@ -84,10 +107,10 @@
   .nav-section-title {
     font-size: 0.65rem;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.08em;
     color: var(--green-400);
     margin-bottom: 0.6rem;
-    font-weight: 500;
+    font-weight: 700;
   }
 
   .nav-link {
@@ -97,6 +120,8 @@
     padding: 0.45rem 0.75rem;
     border-radius: 6px;
     font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.45;
     transition: all 0.2s;
     margin-bottom: 2px;
   }
@@ -108,7 +133,7 @@
 
   .nav-link .nav-num {
     color: var(--green-400);
-    font-weight: 600;
+    font-weight: 700;
     margin-right: 0.5rem;
     font-size: 0.8rem;
   }
@@ -147,7 +172,8 @@
     padding: 0.35rem 1rem;
     border-radius: 100px;
     font-size: 0.78rem;
-    letter-spacing: 0.05em;
+    font-weight: 700;
+    letter-spacing: 0.035em;
     text-transform: uppercase;
     color: var(--green-300);
     margin-bottom: 1.5rem;
@@ -169,20 +195,25 @@
 
   .hero h1 {
     font-family: var(--font-display);
-    font-size: 2.8rem;
-    font-weight: 700;
-    line-height: 1.15;
-    max-width: 600px;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 0.96;
+    letter-spacing: -0.055em;
+    text-transform: uppercase;
+    max-width: 720px;
+    margin-bottom: 1.15rem;
     position: relative;
     z-index: 1;
   }
 
   .hero p {
-    font-size: 1.1rem;
-    max-width: 520px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    max-width: 700px;
     color: rgba(255,255,255,0.75);
-    line-height: 1.7;
+    line-height: 1.55;
+    letter-spacing: -0.02em;
     position: relative;
     z-index: 1;
   }
@@ -200,26 +231,30 @@
   }
 
   .section-num {
-    font-family: var(--font-display);
     font-size: 0.85rem;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: -0.02em;
     color: var(--green-600);
     margin-bottom: 0.4rem;
   }
 
   .section h2 {
     font-family: var(--font-display);
-    font-size: 1.85rem;
-    font-weight: 700;
+    font-size: 2.05rem;
+    font-style: italic;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.045em;
     color: var(--gray-900);
-    margin-bottom: 1rem;
-    line-height: 1.25;
+    margin-bottom: 1.1rem;
+    line-height: 0.98;
   }
 
   .section h3 {
-    font-family: var(--font-display);
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-family: var(--font-body);
+    font-size: 1.28rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
     color: var(--gray-800);
     margin-top: 2.5rem;
     margin-bottom: 0.75rem;
@@ -239,12 +274,17 @@
   }
 
   .section p {
+    font-size: 1.02rem;
+    font-weight: 500;
+    line-height: 1.7;
     margin-bottom: 1rem;
     color: var(--gray-600);
   }
 
   .section ul {
     margin: 0.75rem 0 1.25rem 1.25rem;
+    font-weight: 500;
+    line-height: 1.65;
     color: var(--gray-600);
   }
 
@@ -263,7 +303,9 @@
     padding: 1.25rem 1.5rem;
     border-radius: 10px;
     margin: 1.5rem 0;
-    font-size: 0.92rem;
+    font-size: 0.94rem;
+    font-weight: 500;
+    line-height: 1.65;
   }
 
   .callout-green {
@@ -321,14 +363,17 @@
   }
 
   .step-content h4 {
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: -0.02em;
     color: var(--gray-800);
     margin-bottom: 0.25rem;
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .step-content p {
-    font-size: 0.88rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.6;
     color: var(--gray-500);
     margin: 0;
   }
@@ -339,11 +384,13 @@
     border-collapse: collapse;
     margin: 1.5rem 0;
     font-size: 0.9rem;
+    font-weight: 500;
   }
 
   .info-table th {
     text-align: left;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: -0.015em;
     color: var(--gray-700);
     padding: 0.85rem 1rem;
     background: var(--green-50);
@@ -371,7 +418,9 @@
     padding: 0.2rem 0.65rem;
     border-radius: 100px;
     font-size: 0.75rem;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
 
   .tag-green {
@@ -418,12 +467,15 @@
     align-items: center;
     gap: 0.5rem;
     font-weight: 700;
+    letter-spacing: -0.02em;
     margin-bottom: 0.75rem;
     color: var(--gray-800);
   }
 
   .comp-card p, .comp-card li {
     font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.6;
     color: var(--gray-500);
   }
 
@@ -463,8 +515,13 @@
     border-top: 1px solid var(--gray-200);
     padding: 2rem 4rem;
     font-size: 0.8rem;
+    font-weight: 500;
     color: var(--gray-400);
     text-align: center;
+  }
+
+  strong {
+    font-weight: 700;
   }
 
   /* ── RESPONSIVE ── */
@@ -477,7 +534,9 @@
       right: 2rem;
       width: clamp(135px, 22vw, 180px);
     }
-    .hero h1 { font-size: 2rem; }
+    .hero h1 { font-size: 2.3rem; }
+    .hero p { font-size: 1.08rem; max-width: 620px; }
+    .section h2 { font-size: 1.8rem; }
     .content { padding: 2rem 1.5rem; }
     .comparison { grid-template-columns: 1fr; }
   }
@@ -488,6 +547,10 @@
       right: 1rem;
       width: min(160px, 34vw);
     }
+    .hero h1 { font-size: 1.95rem; }
+    .hero p { font-size: 1rem; }
+    .section h2 { font-size: 1.55rem; }
+    .section h3 { font-size: 1.16rem; }
   }
 
   /* ── PRINT ── */
@@ -618,7 +681,7 @@
         </div>
 
         <div class="callout callout-green">
-          <span class="callout-icon">📱</span> <strong>Ingreso desde el celular:</strong> también podés acceder a Nubux desde tu teléfono mediante la aplicación móvil. Para conocer cómo generar tu código de acceso y configurar la app, consultá la guía detallada en el siguiente enlace: <a href="https://intercom.help/tecnom/es/articles/13230462-codigo-app-mobile" target="_blank" style="color:var(--green-700); font-weight:600;">Guía de ingreso desde la App Mobile</a>.
+<span class="callout-icon">📱</span> <strong>Ingreso desde el celular:</strong> también podés acceder a Nubux desde tu teléfono mediante la aplicación móvil. Para conocer cómo generar tu código de acceso y configurar la app, consultá la guía detallada en el siguiente enlace: <a href="https://intercom.help/tecnom/es/articles/13230462-codigo-app-mobile" target="_blank" style="color:var(--green-700); font-weight:700;">Guía de ingreso desde la App Mobile</a>.
         </div>
       </section>
 
@@ -691,9 +754,9 @@
             <h4><span class="tag tag-green">Persona</span></h4>
             <p>Usá este tipo cuando el cliente es un <strong>individuo particular</strong>.</p>
             <ul>
-              <li><strong>Nombre y apellido</strong> <span style="color:var(--green-600); font-size:0.75rem; font-weight:600;">· OBLIGATORIO</span></li>
+<li><strong>Nombre y apellido</strong> <span style="color:var(--green-600); font-size:0.75rem; font-weight:700;">· OBLIGATORIO</span></li>
               <li>DNI / documento de identidad</li>
-              <li><strong>Teléfono y/o email de contacto</strong> <span style="color:var(--green-600); font-size:0.75rem; font-weight:600;">· OBLIGATORIO (al menos uno)</span></li>
+<li><strong>Teléfono y/o email de contacto</strong> <span style="color:var(--green-600); font-size:0.75rem; font-weight:700;">· OBLIGATORIO (al menos uno)</span></li>
               <li>Dirección personal</li>
             </ul>
           </div>
@@ -701,10 +764,10 @@
             <h4><span class="tag tag-blue">Empresa</span></h4>
             <p>Usá este tipo cuando el cliente es una <strong>razón social o empresa</strong>.</p>
             <ul>
-              <li><strong>Razón social</strong> <span style="color:#1e40af; font-size:0.75rem; font-weight:600;">· OBLIGATORIO</span></li>
+<li><strong>Razón social</strong> <span style="color:#1e40af; font-size:0.75rem; font-weight:700;">· OBLIGATORIO</span></li>
               <li>CUIT</li>
               <li>Rubro o actividad</li>
-              <li><strong>Datos de contacto de la empresa</strong> <span style="color:#1e40af; font-size:0.75rem; font-weight:600;">· OBLIGATORIO (mail y/o teléfono)</span></li>
+<li><strong>Datos de contacto de la empresa</strong> <span style="color:#1e40af; font-size:0.75rem; font-weight:700;">· OBLIGATORIO (mail y/o teléfono)</span></li>
               <li>Persona de contacto (referente)</li>
             </ul>
           </div>
