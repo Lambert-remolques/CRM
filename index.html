@@ -527,6 +527,33 @@
     gap: 0.5rem;
   }
 
+  .screenshot img {
+    display: block;
+    width: 100%;
+    max-width: 920px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--gray-200);
+    box-shadow: 0 12px 32px rgba(17, 24, 39, 0.08);
+  }
+
+  .screenshot-plain {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 1.5rem 0;
+    color: inherit;
+    font-size: inherit;
+    gap: 0;
+  }
+
+  .screenshot-plain img {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
   .screenshot-icon {
     font-size: 1.5rem;
     opacity: 0.5;
@@ -694,9 +721,8 @@
           </div>
         </div>
 
-        <div class="screenshot">
-          <span class="screenshot-icon">🖼</span>
-          Captura de pantalla — Pantalla de inicio de sesión de Tecnom Nubux
+        <div class="screenshot screenshot-plain">
+          <img src="Inicio sesion.png" alt="Pantalla de inicio de sesion de Tecnom Nubux">
         </div>
 
         <div class="callout callout-amber">
@@ -717,8 +743,8 @@
 
         <p>Una vez que iniciaste sesión, vas a ver tu <strong>Tablero Principal</strong>. Desde allí podés administrar todas tus tareas diarias sin salir del panel.</p>
 
-        <div style="margin: 1.5rem 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--gray-200);">
-          <img src="assets/img/tablero-vendedor-placeholder.svg" alt="Pendiente: captura del tablero del vendedor" style="width: 100%; display: block;">
+        <div class="screenshot screenshot-plain">
+          <img src="tablero vendedor.png" alt="Tablero principal del vendedor en Tecnom Nubux">
         </div>
 
         <h3>Apartados principales del tablero</h3>
@@ -854,9 +880,8 @@
           </div>
         </div>
 
-        <div class="screenshot">
-          <span class="screenshot-icon">🖼</span>
-          Captura de pantalla — Formulario con opción "Solo cargar cliente"
+        <div class="screenshot screenshot-plain">
+          <img src="precargar cliente.png" alt="Formulario con opcion solo cargar cliente en Tecnom Nubux">
         </div>
 
         <div class="callout callout-green">
@@ -937,9 +962,8 @@
           </div>
         </div>
 
-        <div class="screenshot">
-          <span class="screenshot-icon">🖼</span>
-          Captura de pantalla — Creación de oportunidad sin presupuestar
+        <div class="screenshot screenshot-plain">
+          <img src="cliente interesado.png" alt="Creacion de oportunidad sin presupuestar en Tecnom Nubux">
         </div>
 
         <div class="callout callout-green">
