@@ -28,6 +28,7 @@
     --green-300: #86efac;
     --green-400: #4ade80;
     --green-500: #22c55e;
+    --green-title: #159947;
     --green-600: #16a34a;
     --green-700: #15803d;
     --green-800: #166534;
@@ -167,6 +168,7 @@
 
   .hero-badge {
     display: inline-block;
+    font-family: var(--font-body);
     background: rgba(255,255,255,0.1);
     border: 1px solid rgba(255,255,255,0.15);
     padding: 0.35rem 1rem;
@@ -201,6 +203,7 @@
     line-height: 0.96;
     letter-spacing: -0.055em;
     text-transform: uppercase;
+    color: white;
     max-width: 720px;
     margin-bottom: 1.15rem;
     position: relative;
@@ -245,7 +248,7 @@
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: -0.045em;
-    color: var(--gray-900);
+    color: var(--green-title);
     margin-bottom: 1.1rem;
     line-height: 0.98;
   }
@@ -271,6 +274,26 @@
   .screenshot,
   .divider {
     max-width: 960px;
+  }
+
+  .callout,
+  .callout-icon,
+  .steps,
+  .step,
+  .step-num,
+  .step-content h4,
+  .step-content p,
+  .info-table,
+  .info-table th,
+  .info-table td,
+  .tag,
+  .comp-card,
+  .comp-card h4,
+  .comp-card p,
+  .comp-card li,
+  .screenshot,
+  .footer {
+    font-family: var(--font-body);
   }
 
   .section p {
@@ -597,7 +620,7 @@
     <header class="hero">
       <img src="LAMBERT blanco sin fondo.png" alt="Logo Lambert" class="hero-logo">
       <div class="hero-badge">Instructivo interno</div>
-      <h1>CRM Nubux</h1>
+      <h1>Guía introducción - CRM</h1>
       <p>Todo lo que necesitás saber para gestionar clientes, oportunidades y ventas desde una sola aplicación.</p>
     </header>
 
