@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder del tablero del vendedor</title>
+  <desc id="desc">Imagen temporal para GitHub Pages hasta reemplazarla por la captura real del tablero del vendedor.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3faf5"/>
+      <stop offset="100%" stop-color="#e3f5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <rect x="44" y="44" width="1192" height="632" rx="20" fill="#ffffff" stroke="#bbf7d0" stroke-width="4"/>
+  <rect x="84" y="92" width="240" height="26" rx="13" fill="#159947" opacity="0.14"/>
+  <rect x="84" y="146" width="1112" height="104" rx="18" fill="#f0fdf4" stroke="#dcfce7"/>
+  <rect x="84" y="274" width="356" height="350" rx="18" fill="#f9fafb" stroke="#e5e7eb"/>
+  <rect x="462" y="274" width="356" height="350" rx="18" fill="#f9fafb" stroke="#e5e7eb"/>
+  <rect x="840" y="274" width="356" height="350" rx="18" fill="#f9fafb" stroke="#e5e7eb"/>
+  <text x="84" y="118" fill="#14532d" font-family="Montserrat, Arial, sans-serif" font-size="26" font-weight="700">TABLERO DEL VENDEDOR</text>
+  <text x="84" y="190" fill="#14532d" font-family="Montserrat, Arial, sans-serif" font-size="44" font-style="italic" font-weight="800">CAPTURA PENDIENTE</text>
+  <text x="84" y="228" fill="#4b5563" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="500">Reemplazar este archivo por la imagen real del tablero.</text>
+  <text x="122" y="346" fill="#159947" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="700">Oportunidades</text>
+  <text x="500" y="346" fill="#159947" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="700">Seguimientos</text>
+  <text x="878" y="346" fill="#159947" font-family="Montserrat, Arial, sans-serif" font-size="24" font-weight="700">Indicadores</text>
+  <text x="122" y="390" fill="#6b7280" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="500">Subi la captura real en:</text>
+  <text x="122" y="424" fill="#111827" font-family="Montserrat, Arial, sans-serif" font-size="22" font-weight="700">assets/img/tablero-vendedor-placeholder.svg</text>
+  <text x="122" y="472" fill="#6b7280" font-family="Montserrat, Arial, sans-serif" font-size="20" font-weight="500">o actualiza el src del HTML al nombre final.</text>
+</svg>
