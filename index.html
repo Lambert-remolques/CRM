@@ -1144,10 +1144,65 @@
 
         <div style="display:flex; align-items:center; gap:0.5rem; margin: 0.25rem 0 1.25rem 0; flex-wrap:wrap;">
           <span class="tag tag-blue">Bloque 2 · Condicional</span>
-          <span style="color: var(--gray-500); font-size: 0.88rem;">Segundo bloque del presupuesto</span>
+          <span style="color: var(--gray-500); font-size: 0.88rem;">Solo si se toma un usado como parte de pago</span>
         </div>
 
-        <p>Contenido pendiente de definir.</p>
+        <p>Cuando el cliente entrega una <strong>unidad usada como parte de pago</strong>, se habilita el bloque <em>Datos de la unidad actual del cliente</em>. Allí cargás la información necesaria para identificar y valuar la unidad recibida.</p>
+
+        <h3 style="color: #1e40af;">Campos a completar</h3>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <h4>Identificación del vehículo</h4>
+              <p>Completá los datos básicos que permiten identificar la unidad usada:</p>
+              <div style="display:flex; gap:0.5rem; margin-top:0.5rem; flex-wrap:wrap;">
+                <span class="tag tag-blue">Marca</span>
+                <span class="tag tag-blue">Modelo</span>
+                <span class="tag tag-blue">Año</span>
+                <span class="tag tag-blue">Patente</span>
+                <span class="tag tag-blue">Color</span>
+              </div>
+              <p style="margin-top:0.5rem; font-size:0.85rem; color:var(--gray-500);">El campo <strong>Modelo</strong> corresponde al tipo de unidad.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <h4>Valor de la toma</h4>
+              <p>Indicá el <strong>valor acordado</strong> en el que la unidad será tomada como parte de pago.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <h4>No permutar</h4>
+              <p>Tildá esta opción <strong>cuando corresponda</strong>, según las condiciones acordadas para la operación.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <h4>Otros datos</h4>
+              <p>Campo libre para sumar toda la información adicional que ayude a identificar y valuar correctamente la unidad.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout" style="background:#eff6ff; border-left:3px solid #3b82f6; color:#1e40af;">
+          <span class="callout-icon">📝</span> <strong>¿Qué incluir en "Otros datos"?</strong>
+          <ul style="margin: 0.6rem 0 0 1.25rem;">
+            <li>Largo</li>
+            <li>Configuración</li>
+            <li>Estado general</li>
+            <li>Características particulares</li>
+          </ul>
+        </div>
+
+        <div class="screenshot screenshot-plain">
+          <img src="unidad actual.png" alt="Bloque Datos de la unidad actual del cliente en Tecnom Nubux">
+        </div>
       </section>
 
       <div class="divider"></div>
