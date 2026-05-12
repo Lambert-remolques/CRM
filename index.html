@@ -640,15 +640,16 @@
     </div>
 
     <div class="nav-section">
-      <div class="nav-section-title">Gestión de presupuestos</div>
+      <div class="nav-section-title">Presupuestos</div>
       <a href="#presupuestar" class="nav-link"><span class="nav-num">08</span>Presupuestar</a>
-      <a href="#toma-usado" class="nav-link"><span class="nav-num">09</span>Toma de usado</a>
-      <a href="#seguimiento" class="nav-link"><span class="nav-num">10</span>Seguimiento</a>
+      <a href="#relacion-comercial" class="nav-link"><span class="nav-num">09</span>Datos de la relación comercial</a>
+      <a href="#toma-usado" class="nav-link"><span class="nav-num">10</span>Toma de usados</a>
+      <a href="#seguimiento" class="nav-link"><span class="nav-num">11</span>Seguimiento</a>
     </div>
 
     <div class="nav-section">
       <div class="nav-section-title">Actualización continua</div>
-      <a href="#continuidad-documento" class="nav-link"><span class="nav-num">11</span>Documento en desarrollo</a>
+      <a href="#continuidad-documento" class="nav-link"><span class="nav-num">12</span>Documento en desarrollo</a>
     </div>
   </nav>
 
@@ -1014,7 +1015,7 @@
         <div class="section-num">Sección 08</div>
         <h2>Presupuestar</h2>
 
-        <p>Esta etapa se utiliza cuando el cliente manifiesta un <strong>interés concreto</strong> en una unidad y solicita una <strong>cotización formal</strong>. Al avanzar a esta instancia, se genera una oportunidad comercial con toda la información necesaria para confeccionar el presupuesto.</p>
+        <p>A continuación vamos a ver cómo generar un <strong>presupuesto formal</strong> para una oportunidad comercial, completando los datos necesarios para confeccionar la cotización.</p>
 
         <h3>¿Cómo presupuestar?</h3>
 
@@ -1043,7 +1044,7 @@
 
         <div class="comparison">
           <div class="comp-card persona">
-            <h4><span class="tag tag-green">Obligatorio</span></h4>
+            <h4><span class="tag tag-green">Bloque 1 · Obligatorio</span></h4>
             <p style="font-weight:700; color:var(--gray-800); margin-bottom:0.5rem;">Datos de la relación comercial</p>
             <p>Información vinculada a la operación comercial:</p>
             <ul>
@@ -1054,15 +1055,34 @@
             </ul>
           </div>
           <div class="comp-card empresa">
-            <h4><span class="tag tag-blue">Condicional</span></h4>
+            <h4><span class="tag tag-blue">Bloque 2 · Condicional</span></h4>
             <p style="font-weight:700; color:var(--gray-800); margin-bottom:0.5rem;">Datos de la unidad actual del cliente</p>
             <p>Se completa <strong>solo si</strong> el cliente entrega un usado como parte de pago. Allí se cargan los datos para identificar y valuar la unidad.</p>
           </div>
         </div>
 
-        <h3>Detalle del bloque: Datos de la relación comercial</h3>
+        <div class="callout callout-green">
+          <span class="callout-icon">👉</span> Cada bloque se detalla a continuación: el <strong>Bloque 1</strong> en la <a href="#relacion-comercial" style="color:var(--green-700); font-weight:700;">Sección 09</a> y el <strong>Bloque 2</strong> en la <a href="#toma-usado" style="color:var(--green-700); font-weight:700;">Sección 10</a>.
+        </div>
+      </section>
 
-        <p>Estos son los campos que vas a completar dentro del primer bloque:</p>
+      <div class="divider"></div>
+
+      <!-- ═══ SECCIÓN 9: DATOS DE LA RELACIÓN COMERCIAL ═══ -->
+      <section class="section" id="relacion-comercial">
+        <div class="section-num">Sección 09</div>
+        <h2 style="display:flex; align-items:center; gap:0.6rem; flex-wrap:wrap;">
+          <span>Datos de la relación comercial</span>
+        </h2>
+
+        <div style="display:flex; align-items:center; gap:0.5rem; margin: 0.25rem 0 1.25rem 0; flex-wrap:wrap;">
+          <span class="tag tag-green">Bloque 1 · Obligatorio</span>
+          <span style="color: var(--gray-500); font-size: 0.88rem;">Primer bloque del presupuesto</span>
+        </div>
+
+        <p>Este bloque agrupa la información comercial de la operación. Es <strong>obligatorio</strong> y se completa para toda oportunidad que pase por la etapa de presupuestar.</p>
+
+        <h3 style="color: var(--green-800);">Campos a completar</h3>
 
         <div class="steps">
           <div class="step">
@@ -1113,19 +1133,24 @@
 
       <div class="divider"></div>
 
-      <!-- ═══ SECCIÓN 9: TOMA DE USADO ═══ -->
+      <!-- ═══ SECCIÓN 10: TOMA DE USADOS ═══ -->
       <section class="section" id="toma-usado">
-        <div class="section-num">Sección 09</div>
-        <h2>Toma de usado</h2>
+        <div class="section-num">Sección 10</div>
+        <h2>Toma de usados</h2>
+
+        <div style="display:flex; align-items:center; gap:0.5rem; margin: 0.25rem 0 1.25rem 0; flex-wrap:wrap;">
+          <span class="tag tag-blue">Bloque 2 · Condicional</span>
+          <span style="color: var(--gray-500); font-size: 0.88rem;">Segundo bloque del presupuesto</span>
+        </div>
 
         <p>Contenido pendiente de definir.</p>
       </section>
 
       <div class="divider"></div>
 
-      <!-- ═══ SECCIÓN 10: SEGUIMIENTO ═══ -->
+      <!-- ═══ SECCIÓN 11: SEGUIMIENTO ═══ -->
       <section class="section" id="seguimiento">
-        <div class="section-num">Sección 10</div>
+        <div class="section-num">Sección 11</div>
         <h2>Seguimiento</h2>
 
         <p>Contenido pendiente de definir.</p>
